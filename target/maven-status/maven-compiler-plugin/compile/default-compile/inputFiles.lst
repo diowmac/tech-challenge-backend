@@ -1,0 +1,13 @@
+D:\Projetos\3aSystem\3aScolar\tech-challenge-backend\src\main\java\com\techchallenge\backend\config\JwtUtil.java
+D:\Projetos\3aSystem\3aScolar\tech-challenge-backend\src\main\java\com\techchallenge\backend\config\SecurityConfig.java
+D:\Projetos\3aSystem\3aScolar\tech-challenge-backend\src\main\java\com\techchallenge\backend\controller\HomeController.java
+D:\Projetos\3aSystem\3aScolar\tech-challenge-backend\src\main\java\com\techchallenge\backend\controller\UsuarioController.java
+D:\Projetos\3aSystem\3aScolar\tech-challenge-backend\src\main\java\com\techchallenge\backend\dto\LoginDTO.java
+D:\Projetos\3aSystem\3aScolar\tech-challenge-backend\src\main\java\com\techchallenge\backend\dto\UsuarioDTO.java
+D:\Projetos\3aSystem\3aScolar\tech-challenge-backend\src\main\java\com\techchallenge\backend\exception\GlobalExceptionHandler.java
+D:\Projetos\3aSystem\3aScolar\tech-challenge-backend\src\main\java\com\techchallenge\backend\model\TipoUsuario.java
+D:\Projetos\3aSystem\3aScolar\tech-challenge-backend\src\main\java\com\techchallenge\backend\model\Usuario.java
+D:\Projetos\3aSystem\3aScolar\tech-challenge-backend\src\main\java\com\techchallenge\backend\repository\UsuarioRepository.java
+D:\Projetos\3aSystem\3aScolar\tech-challenge-backend\src\main\java\com\techchallenge\backend\service\impl\UsuarioServiceImpl.java
+D:\Projetos\3aSystem\3aScolar\tech-challenge-backend\src\main\java\com\techchallenge\backend\service\UsuarioService.java
+D:\Projetos\3aSystem\3aScolar\tech-challenge-backend\src\main\java\com\techchallenge\backend\TechChallengeBackendApplication.java
