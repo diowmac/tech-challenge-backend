@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "28940ecf-fc64-4ab0-a935-36b873e8d428",
+		"name": "Spring Boot API - Usuários",
+		"description": "Coleção para testar a API de gerenciamento de usuários em Spring Boot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12887774"
+	},
+	"item": [
+		{
+			"name": "Cadastrar Usuário",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nome\": \"Marco Teste\",\n  \"email\": \"marcoezequielcedro2@gmail.com\",\n  \"login\": \"marco\",\n  \"senha\": \"1234\",\n  \"endereco\": \"Rua manágua lt 2109\",\n  \"tipo\": \"CLIENTE\"\n}"
+				},
+				"url": "http://localhost:9095/api/usuarios/cadastrar"
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Usuário",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJjbyIsImlhdCI6MTc0ODIwNjIzNiwiZXhwIjoxNzQ4MjkyNjM2fQ.qtRQ4rxJMYYiTi1nRuUZXZGeTfFmNHzeVjU2LJNeemo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nome\": \"Marco Ezequiel teste\",\n  \"email\": \"marcoezequielcedro@gmail.com\",\n  \"login\": \"marco1\",\n  \"senha\": \"123456\",\n  \"endereco\": \"Rua manágua lt 2109\",\n  \"tipo\": \"CLIENTE\"\n}"
+				},
+				"url": "http://localhost:9095/api/usuarios/atualizar/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir Usuário",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:9095/api/usuarios/excluir/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Usuário por ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJjbyIsImlhdCI6MTc0ODIxMTM1MCwiZXhwIjoxNzQ4Mjk3NzUwfQ.dHIublJX6KL_M9AIkTKwBxs-XjVhWulf0USWqNQSZs4",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:9095/api/usuarios/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Login do Usuário",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"login\": \"marco\",\n\"senha\": \"12345\"\n}"
+				},
+				"url": "http://localhost:9095/api/usuarios/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Trocar Senha",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXJjbyIsImlhdCI6MTc0ODIxMTM1MCwiZXhwIjoxNzQ4Mjk3NzUwfQ.dHIublJX6KL_M9AIkTKwBxs-XjVhWulf0USWqNQSZs4",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "12345"
+				},
+				"url": "http://localhost:9095/api/usuarios/trocar-senha/1"
+			},
+			"response": []
+		}
+	]
+}
